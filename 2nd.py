@@ -1,18 +1,12 @@
 import requests
 
 city = "Moscow,RU"
-
-#в переменной city находятся 2 аргумента для api call'а
-#первая часть переменной отвечает за location name
-#чтобы узнать его необходимо провести reverse geocoding
-
-
 appid = "e84dd76c684568b6f05eb8343d3807a4"
 realpar = {'q': city, 'units': 'metric', 'lang': 'ru', 'APPID': appid}
 
 res = requests.get("http://api.openweathermap.org/data/2.5/forecast", params=realpar)
 data = res.json()
-print(res.url)
+#print(res.url)
 
 print("Прогноз погоды на неделю:")
 for i in data['list']:
