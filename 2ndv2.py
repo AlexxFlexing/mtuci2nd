@@ -1,7 +1,7 @@
 import requests
 
 city = "Moscow,RU"
-appid = "e84dd76c684568b6f05eb8343d3807a4"
+appid = "filtered"
 realpar = {'q': city, 'units': 'metric', 'lang': 'ru', 'APPID': appid}
 
 res = requests.get("http://api.openweathermap.org/data/2.5/forecast", params=realpar)
