@@ -3,7 +3,7 @@ print("Выберите тип прогноза", "\r\nВведите 1 для �
 choiceNum = int(input())
 
 city = "Moscow,RU"
-appid = "e84dd76c684568b6f05eb8343d3807a4"
+appid = "filtered"
 realpar = {'q': city, 'units': 'metric', 'lang': 'ru', 'APPID': appid}
 
 if choiceNum == 1:
